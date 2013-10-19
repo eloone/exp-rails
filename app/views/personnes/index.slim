@@ -1,0 +1,7 @@
+= @titi 
+- @personnes.each do |p| 
+	= p.name 
+	= link_to 'Supprimer' , personne_path(p), method: :delete 
+	br
+br
+= link_to 'Creer une personne', new_personne_path 

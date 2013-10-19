@@ -1,0 +1,10 @@
+- if @personne.errors.any? 
+	= @personne.errors.inspect
+
+= form_for @personne do |f| 
+	| Name : 
+	= f.text_field  :name 
+	br
+	| Age : 
+	= f.text_field  :age 
+	= f.submit 
